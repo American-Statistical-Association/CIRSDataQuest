@@ -27,6 +27,14 @@ title: "FAQ"
 
 ---
 
+**Q**: I am not a statistics student but I am interested in statistics. Can I participate?
+
+**A**: Yes, absolutely. Regardless of your discipline, you can participate in Data Quest. 
+
+---
+
 **Q**: I am a student in country X but I am a citizen of country Y, which country level competition should I participate in?
 
 **A**: Participation is based on your student status. You should participate with peers in country X.
+
+
