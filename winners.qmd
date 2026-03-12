@@ -20,10 +20,12 @@ winners_long <- winners %>%
   separate_longer_delim(c(names, affiliations), delim = ";") %>%
   mutate(
     names = str_trim(names),
-    affiliations = str_trim(affiliations)
+    affiliations = str_trim(affiliations),
+    # Combine Team and Country for the header
+    team_country = paste0(team_name, " (", country, ")")
   ) %>%
-  # Keep columns separate and select the order for the table
-  select(award, team_name, country, names, affiliations)
+  # Remove year and country (since country is now in the header)
+  select(award, team_country, names, affiliations)
 
 ```
 
@@ -32,14 +34,13 @@ winners_long <- winners %>%
 #| echo: false
 # 2. Create the Table
 winners_long %>%
-  group_by(award, team_name) %>%
+  group_by(award, team_country) %>%
   gt() %>%
   tab_header(
     title = md("**International Data Quest Winners**"),
     subtitle = "Results by Award Category and Team"
   ) %>%
   cols_label(
-    country = "Country",
     names = "Student Name",
     affiliations = "Affiliation"
   ) %>%
@@ -60,11 +61,6 @@ winners_long %>%
   tab_style(
     style = cell_text(color = "#a65d39", weight = "bold"), # Warm tone for group headers
     locations = cells_row_groups()
-  ) %>%
-  # Center specific columns for balance
-  cols_align(
-    align = "center",
-    columns = c(country)
   )
 ```
 
