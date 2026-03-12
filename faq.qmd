@@ -1,0 +1,32 @@
+---
+title: "FAQ"
+---
+
+**Q**: Who can participate in the ASA International Data Quest? 
+
+**A**: Teams of 2-4 students consisting of either undergraduate OR master's students can participate. Teams cannot mix undergraduate and master's students as these are separate competition categories. Students from any discipline are welcome, not just statistics majors.
+
+---
+
+**Q**: When does the competition take place? 
+
+**A**: The competition runs throughout October. The dataset is released on the first Monday of October, and video submissions are due on the last Friday of October.
+
+---
+
+**Q**: What do we need to submit? 
+
+**A**: Teams must submit a 5-minute video presentation along with slides by the last Friday of October. Other than the cover slide and references your file should have at most 4 slides.
+
+---
+
+**Q**: What are the award categories? 
+
+**A**: There are three award categories, each given separately for undergraduate and master's levels: Best Data Visualization, Best Consideration of Ethics, and Best Statistical Insight
+
+
+---
+
+**Q**: I am a student in country X but I am a citizen of country Y, which country level competition should I participate in?
+
+**A**: Participation is based on your student status. You should participate with peers in country X.

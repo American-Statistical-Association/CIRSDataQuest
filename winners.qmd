@@ -1,0 +1,70 @@
+---
+title: "Winners"
+---
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+
+library(gt)
+library(tidyverse)
+
+# Read the data
+winners <- read_csv(here::here("data/winners.csv")) 
+  
+
+winners_long <- winners %>%
+  # Separate names and affiliations into individual rows
+  separate_longer_delim(c(names, affiliations), delim = ";") %>%
+  mutate(
+    names = str_trim(names),
+    affiliations = str_trim(affiliations)
+  ) %>%
+  # Keep columns separate and select the order for the table
+  select(award, team_name, country, names, affiliations)
+
+```
+
+
+```{r}
+#| echo: false
+# 2. Create the Table
+winners_long %>%
+  group_by(award, team_name) %>%
+  gt() %>%
+  tab_header(
+    title = md("**International Data Quest Winners**"),
+    subtitle = "Results by Award Category and Team"
+  ) %>%
+  cols_label(
+    country = "Country",
+    names = "Student Name",
+    affiliations = "Affiliation"
+  ) %>%
+  # Apply the logo-based color palette
+  tab_options(
+    table.width = pct(100),
+    row_group.background.color = "#f8f9fa",
+    row_group.font.weight = "bold",
+    column_labels.background.color = "#2c3e50", # Deep charcoal from logo
+    table.border.top.color = "#2c3e50",
+    heading.border.bottom.color = "#e6b8a2",    # Peach accent from logo
+    table.font.size = px(14)
+  ) %>%
+  tab_style(
+    style = cell_text(color = "#ffffff"),
+    locations = cells_column_labels()
+  ) %>%
+  tab_style(
+    style = cell_text(color = "#a65d39", weight = "bold"), # Warm tone for group headers
+    locations = cells_row_groups()
+  ) %>%
+  # Center specific columns for balance
+  cols_align(
+    align = "center",
+    columns = c(country)
+  )
+```
+

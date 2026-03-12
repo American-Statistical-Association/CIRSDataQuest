@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "Data Quest"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: winners.qmd 
+        text: Winners
+      - href: faq.qmd
+        text: FAQ
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+

@@ -1,0 +1,28 @@
+
+::: {.column-screen}
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("images/logo-wide.png")
+```
+
+:::
+
+Sponsored by the the American Statistical Association (ASA) **Committee on International Relations in Statistics**, International Data Quest is a data event that began in 2025. 
+Every October, teams of undergraduate and master’s students will work in teams to generate and answer questions using a single large and rich dataset provided by ASA. 
+
+Data Quest awards students in three categories:
+
+Best Data Visualization  
+Best Consideration of Ethics ([see ASA’s Ethical Guidelines for Statistical Practice](https://www.amstat.org/your-career/ethical-guidelines-for-statistical-practice))  
+Best Statistical Insight 
+
+Students complete the competition within their countries first and then first place winners move up to the international level of the competition. 
+In 2025, participants were from Brazil, Indonesia, and Türkiye.
+In 2026, we hope to extend the competition to more countries around the world.
+
+If you are a student interested in participating check back this website in September to find country specific participation information.
+
+If you are not a student and if you are interested bringing Data Quest to one of the [136 countries in this list](https://www.amstat.org/membership/developing-country-resident-membership-#:~:text=The%20following%20list%2C%20adopted%20from,Search:), please reach out to mdogucu@uci.edu. 

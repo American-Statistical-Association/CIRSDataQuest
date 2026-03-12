@@ -1,0 +1,77 @@
+/* --- 1. General Page Style --- */
+body {
+  background-color: #ffffff; /* Clean white background */
+  color: #2c3e50;           /* Deep charcoal for readability */
+  font-family: system-ui, -apple-system, sans-serif; /* Modern, clean font */
+}
+
+/* --- 2. Logo / Banner Strip --- */
+.column-screen img {
+  width: 100%;
+  height: auto;
+  max-height: 300px; 
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 1px solid #dee2e6; /* Very subtle divider */
+}
+
+@media (max-width: 768px) {
+  .column-screen img {
+    max-height: 150px;    
+  }
+}
+
+/* --- 3. Navigation Bar (Using the deep charcoal from the logo) --- */
+.navbar {
+  background-color: #2c3e50 !important; 
+  border-bottom: 2px solid #e6b8a2; /* Peach accent line */
+}
+
+.navbar-title, .nav-link {
+  color: #ffffff !important; 
+}
+
+/* Force mobile menu icon to be white */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* --- 4. Links & Action Colors --- */
+a {
+  color: #2c3e50; 
+  font-weight: 500;
+  text-decoration-color: #e6b8a2; /* Underline uses the peach color */
+}
+
+a:hover {
+  color: #e6b8a2; 
+}
+
+/* --- 5. Sidebar Styling --- */
+.quarto-sidebar {
+  background-color: #f8f9fa !important; /* Cool neutral */
+  border-right: 1px solid #dee2e6;
+}
+
+.sidebar-title {
+  color: #2c3e50 !important;
+  font-weight: bold;
+}
+
+.sidebar-navigation .nav-link {
+  color: #6c757d !important;
+}
+
+.sidebar-navigation .nav-link:hover {
+  color: #2c3e50 !important;
+  background-color: #e6b8a220; /* Very light peach tint on hover */
+}
+
+/* --- 6. Content Blocks --- */
+blockquote {
+  border-left: 5px solid #e6b8a2;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  color: #6c757d;
+}
+
