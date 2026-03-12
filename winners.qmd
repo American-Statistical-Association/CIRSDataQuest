@@ -2,6 +2,9 @@
 title: "Winners"
 ---
 
+In 2025, Indonesia was the only country to hold master's level competition and thus an international competition at this level was not held.
+The undergraduate winners in 2025 are as follows. 
+
 ```{r}
 #| echo: false
 #| message: false
